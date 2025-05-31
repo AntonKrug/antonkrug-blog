@@ -1,9 +1,13 @@
 {
-  "name": "eleventy-libdoc",
+  "name": "antonkrug-blog-eleventy-libdoc",
   "version": "0.5.4",
   "description": "An Eleventy starter project to craft slick and responsive documentation",
   "main": "index.js",
   "scripts": {
+    "start": "npx @11ty/eleventy --serve --watch",
+    "build": "npx @11ty/eleventy",
+    "deploy": "bash ./deploy-rsync.sh",
+    "build-deploy": "npx @11ty/eleventy && bash ./deploy-rsync.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +18,7 @@
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-img": "^6.0.1",
     "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-syntaxhighlight": "github:AntonKrug/eleventy-plugin-syntaxhighlight",
     "sharp": "^0.33.5"
   }
 }

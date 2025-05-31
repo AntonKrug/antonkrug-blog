@@ -1,5 +1,5 @@
 ---
-layout: libdoc_page.liquid
+layout: page.liquid
 pagination:
     data: collections.myTags
     size: 1
@@ -9,7 +9,7 @@ date: false
 author: false
 eleventyExcludeFromCollections: true
 # eleventyNavigation:
-#     parent: Tags list
+#     parent: Tags used
 #     key: tag
 ---
 {% assign pages_with_tag = collections[tag] | sort: 'date' %}

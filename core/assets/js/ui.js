@@ -831,26 +831,53 @@ const libdocUi = {
     },
     update: function() {
         libdocUi._currentScreenSizeName = libdocUi.getCurrentScreenSizeName();
-        hljs.highlightAll();
+        // hljs.highlightAll();
+        // hljs.initLineNumbersOnLoad();
+        // document.querySelectorAll('main>pre').forEach(function(elPre) {
+        //     elPre.style.paddingTop = '0';
+        //     const elCommands = elPre.querySelector('.copy_code_block');
+        //     if (elCommands === null) {
+        //         const commandBarMarkup = `<div class="d-flex jc-end">
+        //                 <button type="button"
+        //                     class="
+        //                     d-flex ai-center
+        //                     pt-1 pb-1 fvs-wght-400 fs-2 tt-uppercase
+        //                     bc-0 c-primary-900 b-0 cur-pointer
+        //                     copy_code_block">${libdocMessages.copyCode}</button>
+        //             </div>`;
+        //         elPre.insertAdjacentHTML('afterbegin', commandBarMarkup);
+        //     }
+        //     const elCode = elPre.querySelector('code');
+        //     if (elCode !== null) {
+        //         if (!elCode.classList.contains('hljs')) elCode.classList.add('hljs');
+        //     }
+        // });
+
         document.querySelectorAll('main>pre').forEach(function(elPre) {
-            elPre.style.paddingTop = '0';
-            const elCommands = elPre.querySelector('.copy_code_block');
-            if (elCommands === null) {
-                const commandBarMarkup = `<div class="d-flex jc-end">
-                        <button type="button"
-                            class="
-                            d-flex ai-center
-                            pt-5 pb-5 fvs-wght-400 fs-2 tt-uppercase
-                            bc-0 c-primary-900 b-0 cur-pointer
-                            copy_code_block">${libdocMessages.copyCode}</button>
-                    </div>`;
-                elPre.insertAdjacentHTML('afterbegin', commandBarMarkup);
-            }
-            const elCode = elPre.querySelector('code');
-            if (elCode !== null) {
-                if (!elCode.classList.contains('hljs')) elCode.classList.add('hljs');
-            }
+            elPre.style.padding = '8px'
+            elPre.classList.add('line-numbers');
+            const original = elPre.outerHTML;
+            let updated = `<span>${original}</span>`;
+            elPre.outerHTML = updated;
+
+            // const elCommands = elPre.querySelector('.copy_code_block');
+            // if (elCommands === null) {
+            //     const commandBarMarkup = `<div class="d-flex jc-end">
+            //             <button type="button"
+            //                 class="
+            //                 d-flex ai-center
+            //                 pt-1 pb-1 fvs-wght-400 fs-2 tt-uppercase
+            //                 bc-0 c-primary-900 b-0 cur-pointer
+            //                 copy_code_block">${libdocMessages.copyCode}</button>
+            //         </div>`;
+            //     elPre.insertAdjacentHTML('afterbegin', commandBarMarkup);
+            // }
+            // const elCode = elPre.querySelector('code');
+            // if (elCode !== null) {
+            //     if (!elCode.classList.contains('hljs')) elCode.classList.add('hljs');
+            // }
         });
+
         libdocUi.createFloatingToc();
         libdocUi.createGoToTop();
         libdocUi.updateNavPrimary();

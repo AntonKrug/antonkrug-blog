@@ -17,7 +17,7 @@ export default {
     siteLogoUrl: userConfig.siteLogoUrl ?? "",
     siteLogoMaxHeight: userConfig.siteLogoMaxHeight ?? 60,
     author: userConfig.author ?? false,
-    faviconUrl: userConfig.faviconUrl ?? "/favicon.png",
+    faviconUrl: userConfig.faviconUrl ?? "/favicon.ico",
     ogImageUrl: userConfig.ogImageUrl ?? "https://raw.githubusercontent.com/ita-design-system/ita-medias/refs/heads/main/ogimage-11ty-libdoc.png",
     customLinks: userConfig.customLinks ?? [],
     blogTitle: userConfig.blogTitle ?? "Blog Posts",
@@ -31,15 +31,23 @@ export default {
     htmlBasePathPrefix: userConfig.htmlBasePathPrefix ?? "",
     sandboxRunSwitch: userConfig.sandboxRunSwitch ?? true,
     searchEnabled: userConfig.searchEnabled ?? true,
-    hljsLanguages: userConfig.hljsLanguages ?? [
-        "xml",
-        "javascript",
-        "json",
-        "yaml",
-        "liquid",
-        "markdown",
-        "css"
-    ],
+    // hljsLanguages: userConfig.hljsLanguages ?? [
+    //     "c",
+    //     "cpp",
+    //     "armasm",
+    //     "bash",
+    //     "llvm",
+    //     "verilog",
+    //     "avrasm",
+    //     "xml",
+    //     "javascript",
+    //     "json",
+    //     "yaml",
+    //     "liquid",
+    //     "markdown",
+    //     "css",
+    //     "diff"
+    // ],
     roundedImagesCorners: userConfig.roundedImagesCorners ?? true,
     editThisPageRootUrl: userConfig.editThisPageRootUrl ?? false
 };

@@ -70,7 +70,7 @@ export default {
                     anchorsIds.push(slugifiedId);
                     const markup = `
                         <${m1} id="${slugifiedId}" pl-9="xs,sm">
-                            <a  href="#${slugifiedId}"
+                            <a  href="#${slugifiedId}" style="color: rgba(0, 116, 239, 0.40);border-color: #00000020;"
                                 title="${m2}"
                                 class="pos-absolute top-50 left-0 t-tY-50 | p-4 ml-1 | td-none | brad-4 bc-neutral-100 bwidth-1 bstyle-dashed bcolor-neutral-500 __hover-1 __soft-shadow"
                                 ml-3="xs,sm">
