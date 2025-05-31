@@ -1,11 +1,11 @@
 ---
-title: Hello Grandchild!
+title: Grandchild!
 description: I am the page child of hello child
-layout: libdoc_page.liquid
-permalink: hello-page/hello-child/hello-grandchild/index.html
+layout: page.liquid
+permalink: custom/child/grandchild.html
 eleventyNavigation:
-    key: Hello Grandchild
-    parent: Hello Child
+    key: Grandchild
+    parent: Child
 date: git Last Modified
 tags:
     - blockquote

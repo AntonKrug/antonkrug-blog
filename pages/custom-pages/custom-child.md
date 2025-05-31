@@ -1,11 +1,11 @@
 ---
-title: Hello Child!
+title: Child!
 description: I am the page child of hello page
-layout: libdoc_page.liquid
-permalink: hello-page/hello-child/index.html
+layout: page.liquid
+permalink: custom/child/index.html
 eleventyNavigation:
-    key: Hello Child
-    parent: Hello Page
+    key: Child
+    parent: Custom Page
 date: git Last Modified
 tags:
     - syntax-highlighting

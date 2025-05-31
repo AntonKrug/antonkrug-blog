@@ -1,10 +1,10 @@
 ---
-title: Hello Page!
+title: Custom Page!
 description: I am the first page linked into the primary navigation
-layout: libdoc_page.liquid
-permalink: hello-page/index.html
+layout: page.liquid
+permalink: custom/parent.html
 eleventyNavigation:
-    key: Hello Page
+    key: Custom Page
 date: git Last Modified
 tags:
     - syntax-highlighting

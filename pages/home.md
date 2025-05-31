@@ -1,20 +1,20 @@
 ---
-title: Hello World!
-description: I am the home page of this project
-layout: libdoc_page.liquid
+title: Home landing page
+layout: home.liquid
 permalink: index.html
-date: git Last Modified
-tags:
-    - widgets
+date: false
+author: false
 ---
-{% alert 'It seems to be the beginning of a great documentation story!', 'success', 'Howdy!' %}
+
+
+{% comment %} {% alert 'It seems to be the beginning of a great documentation story!', 'success', 'Howdy!' %}
 
 ## Let’s start!
 
 1. {% iconCard 'Configure', 'Start entering your own settings into `settings.json` at the root of the project. <br>[Configuration documentation](https://eleventy-libdoc.netlify.app/configuration/).', 'faders' %}
 2. {% iconCard 'Write', 'Easily write documentation with Markdown and <abbr title="Hyper Text Markup Language">HTML</abbr>. <br>[Create content](https://eleventy-libdoc.netlify.app/creating-content/).', 'pen' %}
 
-## Get help
+## Get help {% endcomment %}
 
 LibDoc’s website contains a comprehensive documentation about how to install, configure and :
 

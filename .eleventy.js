@@ -11,6 +11,9 @@ import libdocFunctions                      from "./_data/libdocFunctions.js";
 // END LibDoc imports
 
 export default function(eleventyConfig) {
+//    eleventyConfig.addBundle("css");
+//    eleventyConfig.addBundle("js");
+
     // START PLUGINS
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
     eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
@@ -47,7 +50,7 @@ export default function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("sandboxes");
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("core/assets");
-    eleventyConfig.addPassthroughCopy("favicon.png");
+    eleventyConfig.addPassthroughCopy("favicon.ico");
     // END FILE COPY
     
     return {
