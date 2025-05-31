@@ -840,7 +840,7 @@ const libdocUi = {
                         <button type="button"
                             class="
                             d-flex ai-center
-                            pt-5 pb-5 fvs-wght-400 fs-2 tt-uppercase
+                            pt-1 pb-1 fvs-wght-400 fs-2 tt-uppercase
                             bc-0 c-primary-900 b-0 cur-pointer
                             copy_code_block">${libdocMessages.copyCode}</button>
                     </div>`;

@@ -1,14 +1,21 @@
 {
-    "siteTitle": "My Project Title",
-    "siteDescription": "This is the description of my project title",
-    "author": "John Doe",
-    "faviconUrl": "/assets/myfavicon.png",
+    "siteTitle": "Anton2",
+    "siteDescription": "Anton3",
+    "faviconUrl": "/assets/favicon.ico",
     "blogTitle": "Blog",
+    "siteLogoUrl": "/assets/logo.png",
     "customLinks": [
         {
-            "url": "https://github.com/ita-design-system/eleventy-libdoc",
+            "url": "https://github.com/antonkrug/",
             "text": "GitHub"
+        },
+        {
+            "url": "https://www.linkedin.com/in/antonkrug/",
+            "text": "LinkedIn"
+        },
+        {
+            "url": "https://www.thingiverse.com/truhlik_fredy/designs",
+            "text": "Thingiverse"
         }
-    ],
-    "editThisPageRootUrl": "https://github.com/ita-design-system/eleventy-libdoc/blob/main"
+    ]
 }

@@ -10,7 +10,7 @@
         "activeAnchorClass": ""
     },
     "widthSidebar": 300,
-    "widthContent": 700,
+    "widthContent": 900,
     "icomoonIconSize": 32,
     "pluginsParameters": {
         "eleventyImageTransform": {

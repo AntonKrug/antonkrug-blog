@@ -1,0 +1,5 @@
+{
+    "layout": "page.liquid",
+    "tags": [ "post", "wch" ],
+    "wch_post_type": "true"
+}
